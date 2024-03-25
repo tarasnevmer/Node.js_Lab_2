@@ -1,0 +1,17 @@
+{{> header}}
+<div class="weather">
+    <div class="city-buttons">
+        {{#each cities}}
+        <a href="/weather/{{name}}" class="city-button">{{name}}</a>
+        {{/each}}
+    </div>
+    {{#if cityData}}
+    <div class="weather-info">
+        <h1>Погода в місті {{ cityData.name }}</h1>
+
+        <p>Температура: {{ cityData.temperature }} &#8451;</p>
+        <p>Погодні умови: {{ cityData.condition }}</p>
+    </div>
+</div>
+{{/if}}
+{{> footer}}

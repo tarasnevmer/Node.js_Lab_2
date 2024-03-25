@@ -1,0 +1,19 @@
+{
+  "cities": [
+    {
+      "name": "Львів",
+      "temperature": 18,
+      "condition": "Хмарно"
+    },
+    {
+      "name": "Дніпро",
+      "temperature": 22,
+      "condition": "Дощ"
+    },
+    {
+      "name": "Житомир",
+      "temperature": 20,
+      "condition": "Сонячно"
+    }
+  ]
+  }

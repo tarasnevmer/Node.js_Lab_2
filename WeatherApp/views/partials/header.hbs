@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather page</title>
+    <link rel="stylesheet" href="weather.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .weather {
+            display: flex;
+            flex-direction: row;
+            margin-top: 40px;
+            margin-left: 15px;
+        }
+
+        .weather-info {
+            border: 1px solid black;
+            padding: 20px;
+            margin-bottom: 40px;
+            margin-left: 50px;
+            width: 400px;
+        }
+
+
+        .city-buttons {
+            display: flex;
+            flex-direction: column;
+            align-content: stretch;
+            align-items: start;
+        }
+
+        .city-button {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: rgb(88, 88, 231);
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            width: 100px;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            background-color: #ccc;
+            height: 40px;
+        }
+
+        ul li {
+            margin-right: 10px;
+        }
+
+        ul li:hover {
+            background-color: gray;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        .btn-weather {
+            padding: 10px 20px;
+            background-color: rgb(88, 88, 231);
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            margin-left: 200px;
+            position: absolute;
+            top: 100px;
+        }
+
+        .btn-weather:hover {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/weather">Weather</a></li>
+    </ul>
